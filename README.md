@@ -17,8 +17,5 @@
 - html/css
 - javascript
 
-## CSS 
+## CSS 초기화
 - normalize.css 사용
-```
-	npm install --save normalize.css
-```
