@@ -1,17 +1,100 @@
 <!DOCTYPE html>
 <html lang="ko">
+
 <head>
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Hye-Weather-App</title>
-	<link rel="stylesheet" href="normalize.css">
-	<link rel="stylesheet" href="style.css">
+
+	<!-- css normalize 초기화 -->
+	<link rel="stylesheet" href="css/normalize.css">
+
+	<!-- bootstrap -->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+	<link rel="stylesheet" href="css/style.css">
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+		integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
+	</script>
+
 	<script src="index.js" defer></script>
 </head>
-<body>
-	<section class="background">
 
-	</section>
+<body>
+	<!-- mobile header -->
+	<header class="mobile_header">
+		<h1 class="mobile_title">
+			<span class="dan">Dan</span>Weather
+		</h1>
+		<button class="btn_mobile_map">
+			<i class="bi bi-map"></i>
+		</button>
+	</header>
+
+	<!-- main -->
+	<main class="background">
+		<section class="weahter_all">
+			<div class="weather_title">
+				<h1 class="title">HYE Weather
+					<i class="bi bi-brightness-alt-high"></i>
+				</h1>
+			</div>
+			<div class="weatherAndmap">
+				<div class="weather_info">
+					<span class="city_name">
+						시흥시
+					</span>
+					<div class="weather">
+						<i class="bi bi-cloud-drizzle"></i>
+					</div>
+					<span class="temperature">
+						22도
+					</span>
+					<div class="temperature_wrap">
+						<span class="highest_temp">
+							최고: 26도
+						</span>
+						<span class="lowest_temp">
+							최저: 17도
+						</span>
+					</div>
+					<ul class="weather_list">
+						<li class="day1">
+							<span class="date"></span>
+							<div class="weather_icon"></div>
+							<span class="temp"></span>
+						</li>
+						<li class="day2">
+							<span class="date"></span>
+							<div class="weather_icon"></div>
+							<span class="temp"></span>
+						</li>
+						<li class="day3">
+							<span class="date"></span>
+							<div class="weather_icon"></div>
+							<span class="temp"></span>
+						</li>
+						<li class="day4">
+							<span class="date"></span>
+							<div class="weather_icon"></div>
+							<span class="temp"></span>
+						</li>
+					</ul>
+				</div>
+				<div class="map">
+					<img src="image/map.svg" alt="map">
+				</div>
+			</div>
+		</section>
+		<!-- footer -->
+		<footer class="footer">
+			<span class="codebyname">
+				code by LeeHyeRin
+			</span>
+		</footer>
+	</main>
+
+
 </body>
+
 </html>
