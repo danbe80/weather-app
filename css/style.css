@@ -1,0 +1,118 @@
+/* 
+시간대별 배경 색상 (4시간 간격)
+12AM ~ 4AM  : 
+	background-image: linear-gradient(to top, #2b5876 0%, #4e4376 100%);
+4AM ~ 8AM   : 
+	background-image: linear-gradient(to bottom, #667eea 0%, #764ba2 100%);
+8AM ~ 12PM  : 
+	background-image: linear-gradient(to bottom, #7DE2FC 0%, #B9B6E5 100%);
+12PM ~ 4PM  :
+	background-image: linear-gradient(to top, #0acffe 0%, #495aff 100%);
+4PM ~ 8PM   :
+background-image: linear-gradient(to right, #f9d423 0%, #ff4e50 100%);
+8PM ~ 12AM  : 
+	background-image: linear-gradient(to top, #1e3c72 0%, #1e3c72 1%, #2a5298 100%);
+*/
+
+/* .color_wrap {
+	display: flex;
+}
+
+.color1 {
+	width: 16.6666%;
+	height: 100vh;
+	background-image: linear-gradient(to top, #2b5876 0%, #4e4376 100%);
+}
+.color2 {
+	width: 16.6666%;
+	height: 100vh;
+	background-image: linear-gradient(to top, #667eea 0%, #764ba2 100%);
+}
+.color3 {
+	width: 16.6666%;
+	height: 100vh;
+	background-image: linear-gradient(to bottom, #7DE2FC 0%, #B9B6E5 100%);
+}
+.color4 {
+	width: 16.6666%;
+	height: 100vh;
+	background-image: linear-gradient(to top, #0acffe 0%, #495aff 100%);
+}
+.color5 {
+	width: 16.6666%;
+	height: 100vh;
+	background-image: linear-gradient(to right, #f9d423 0%, #ff4e50 100%);
+}
+.color6 {
+	width: 16.6666%;
+	height: 100vh;
+	background-image: linear-gradient(to top, #1e3c72 0%, #1e3c72 1%, #2a5298 100%);
+} */
+
+
+:root {
+	--background-12AM-4AM: linear-gradient(to top, #2b5876 0%, #4e4376 100%);
+	--background-4AM-8AM: linear-gradient(to bottom, #667eea 0%, #764ba2 100%);
+	--background-8AM-12PM: linear-gradient(to bottom, #7DE2FC 0%, #B9B6E5 100%);
+	--background-12PM-4PM: linear-gradient(to top, #0acffe 0%, #495aff 100%);
+	--background-4PM-8PM: linear-gradient(to right, #f9d423 0%, #ff4e50 100%);
+	--background-8PM-12AM: linear-gradient(to top, #1e3c72 0%, #1e3c72 1%, #2a5298 100%);
+}
+/* main */
+.background {
+	height: 100vw;
+	background-image: var(--background-12AM-4AM)
+}
+.weahter_all {
+	width: 90%;
+	margin: auto;
+	/* border: 1px solid rebeccapurple; */
+}
+.weahter_all .weather_title .title {
+	margin: 0;
+	padding: .5em;
+	text-align: center;
+	text-decoration: underline;
+}
+.weahter_all .weatherAndmap {
+	display: flex;
+	justify-content: space-around;
+}
+.weatherAndmap .weather_info {
+	width: 48%;
+	/* border: 1px solid red; */
+}
+.weatherAndmap .map {
+	width: 48%;
+}
+.weatherAndmap .map img {
+	width: 100%;
+}
+.background .footer {
+	text-align: center;
+}
+
+/* mobile header */
+.mobile_header {
+	width: 100%;
+	background-color: #ede7f6;
+	display: flex;
+	justify-content: space-between;
+	box-shadow: 1px 1px 2px rgba(0, 0, 0, .3);
+	display: none;
+}
+.mobile_header .mobile_title {
+	margin: 0;
+	padding: .5rem;
+	font-size: 1em;
+}
+.mobile_header .mobile_title .dan {
+	border: 1px ;
+}
+.mobile_header .btn_mobile_map {
+	border: none;
+	border-radius: 30%;
+	background-color: #d2b5ff;
+	margin: .25rem;
+}
+
